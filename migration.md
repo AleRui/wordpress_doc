@@ -105,6 +105,10 @@ define('WP_DEBUG_LOG', true);
 define('WP_HOME', 'http://localhost/domain');
 define('WP_SITEURL', 'http://localhost/domain');
 ```
+- Configabout FTP updates
+```php
+define('FS_METHOD', 'direct');
+```
 
 #### Update permalink (SAVE Plan, SAVE Changes).
 This rewrite .htaccess (it must have permissions).
