@@ -33,7 +33,7 @@ sudo systemctl restart apache2
 In path: /etc/apache/apache.conf
 AllowOverwrite None -> **AllowOverwrite All**
 
-#### Locate zip files in detination
+#### Locate zip files in detination.
 - Unzip files in destination path:
 ```bash
 sudo unzip wp_backup_YYYYMMDD.tar.gz
@@ -53,7 +53,7 @@ sudo chown -R www-data /destination_path
 sudo chgrp -R www-data /destination_path
 ```
 
-#### Import dump of database
+#### Import dump of database.
 ```bash
 mysql -u username -ppassword wordpress < wpdb_backup_YYYYMMDD.sql
 ```
@@ -86,7 +86,7 @@ UPDATE wp_postmeta SET meta_value = replace(
 );
 ```
 
-#### Config wp-config
+#### Config wp-config.
 - Config MySQL
 ```php
 define('DB_NAME', 'database_name');
@@ -106,5 +106,7 @@ define('WP_HOME', 'http://localhost/domain');
 define('WP_SITEURL', 'http://localhost/domain');
 ```
 
-#### - Update permalink (SAVE Plan, SAVE Changes)
+#### Update permalink (SAVE Plan, SAVE Changes).
 This rewrite .htaccess (it must have permissions).
+
+#### Change links in CSS files or Theme.
