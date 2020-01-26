@@ -110,6 +110,13 @@ define('WP_SITEURL', 'http://localhost/domain');
 define('FS_METHOD', 'direct');
 ```
 
+#### Config permissions files
+```bash
+chown www-data:www-data  -R * # Let Apache be owner
+find . -type d -exec chmod 755 {} \;  # Change directory permissions rwxr-xr-x
+find . -type f -exec chmod 644 {} \;  # Change file permissions rw-r--r--
+```
+
 #### Update permalink (SAVE Plan, SAVE Changes).
 This rewrite .htaccess (it must have permissions).
 
